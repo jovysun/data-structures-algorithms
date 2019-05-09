@@ -1,0 +1,20 @@
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+indent_size = 2
+indent_style = space
+# 是否最后有空行
+insert_final_newline = true
+trim_trailing_whitespace = true
+# 对象大括号直接是否有空格，默认为true，效果：{ foo: bar }
+bracket_spacing = true
+# 是否使用尾逗号，有三个可选值"<none|es5|all>"
+trailing_comma = none
+# 行尾是否使用分号，默认为true
+semi = true
+# 字符串是否使用单引号，默认为false，使用双引号
+single_quote = true
+use_tabs = false
+tab_width = 2
