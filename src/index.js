@@ -10,7 +10,7 @@ import {
   hanoi,
   hanoiStack
 } from "./UseCase/stack";
-import { testQueue, testDancer } from "./UseCase/queue";
+import { testQueue, testDancer, testPriorityQueue } from "./UseCase/queue";
 
 // 十进制整数转成任何进制;
 console.log("十进制整数转成任何进制:");
@@ -59,4 +59,7 @@ console.log(hanoi(3, "A", "B", "C"));
 // 队列++++++++++++++++++++++++++++++++++++++++++++++++++++
 console.log("测试 Queue类...");
 testQueue();
+console.log("测试方块舞...");
 testDancer();
+console.log("测试优化队列：候诊室...");
+testPriorityQueue();

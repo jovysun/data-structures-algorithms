@@ -1,4 +1,4 @@
-import { Queue } from "../DataStructures/Queue";
+import { Queue, PriorityQueue } from "../DataStructures/Queue";
 // 测试Queue类
 function testQueue() {
   let q = new Queue();
@@ -47,4 +47,25 @@ function testDancer() {
 }
 // 基数排序
 
-export { testQueue, testDancer };
+// 候诊室
+function Patient(name, code) {
+  this.name = name;
+  this.code = code;
+}
+
+function testPriorityQueue() {
+  let p1 = new Patient("Smith", 5);
+  let p2 = new Patient("Jones", 4);
+  let p3 = new Patient("Tom", 6);
+
+  let pq = new PriorityQueue();
+  pq.enqueue(p1);
+  pq.enqueue(p2);
+  pq.enqueue(p3);
+  console.log(pq.toString());
+  let seen = pq.dequeue();
+  console.log("Patient being treated: " + seen[0].name);
+  console.log("Patient waiting to be seen: " + pq.toString());
+}
+
+export { testQueue, testDancer, testPriorityQueue };
