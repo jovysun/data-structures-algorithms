@@ -11,6 +11,7 @@ import {
   hanoiStack
 } from "./UseCase/stack";
 import { testQueue, testDancer, testPriorityQueue } from "./UseCase/queue";
+import { testLinkedList, testDoublyLinkedList } from "./UseCase/linkedlist";
 
 // 十进制整数转成任何进制;
 console.log("十进制整数转成任何进制:");
@@ -63,3 +64,9 @@ console.log("测试方块舞...");
 testDancer();
 console.log("测试优化队列：候诊室...");
 testPriorityQueue();
+
+// 链表++++++++++++++++++++++++++++++++++++++++++++++++++++
+console.log("测试 LinkedList类...");
+testLinkedList();
+console.log("测试 DoublyLinkedList类...");
+testDoublyLinkedList();
