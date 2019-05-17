@@ -1,6 +1,6 @@
 import { Stack, Stack2 } from "../DataStructures/Stack";
 
-// 十进制整数转成任何进制
+// 十进制整数转成其他进制
 function mulBase(num, base) {
   const DIGITS = "0123456789ABCDEF";
   let s = new Stack();
